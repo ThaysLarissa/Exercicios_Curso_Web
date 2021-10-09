@@ -4,7 +4,7 @@
     /*flex-direction: column-reverse; Direção da coluna*/
     flex-wrap: wrap-reverse; /*Com telas menores irá alinhar itens mais abaixo*/
     /*flex-flow: colum wrap; Junçao de flex-direction e flex-wrap*/
-    j/*ustify-content: space-evenly; */
+    /*ustify-content: space-evenly; */
 }
 
 .item1 {
