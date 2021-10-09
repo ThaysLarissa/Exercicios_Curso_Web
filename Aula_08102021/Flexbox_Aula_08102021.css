@@ -1,0 +1,58 @@
+/*Aula de Flex Box 1*/
+#container {
+    display: flex; /*Torna a coluna flexivel*/
+    /*flex-direction: column-reverse; Direção da coluna*/
+    flex-wrap: wrap-reverse; /*Com telas menores irá alinhar itens mais abaixo*/
+    /*flex-flow: colum wrap; Junçao de flex-direction e flex-wrap*/
+    j/*ustify-content: space-evenly; */
+}
+
+.item1 {
+    background-color: hsl(209, 59%, 41%);
+    width: 200px;
+    height: 60px;
+}
+
+.item2 {
+    background-color: #555;
+    width: 200px;
+    height: 60px;
+}
+
+.item3 {
+    background-color: brown;
+    width: 200px;
+    height: 60px;
+}
+
+/*Exercicios de Flex Box 1*/
+
+
+#container1, #container2 {
+    display: flex; /*Torna a coluna flexivel*/
+    /*flex-direction: column-reverse; Direção da coluna*/
+    flex-wrap: wrap-reverse; /*Com telas menores irá alinhar itens mais abaixo*/
+    /*flex-flow: colum wrap; Junçao de flex-direction e flex-wrap*/
+    justify-content: space-evenly; /**/
+}
+
+.item4, .item7 {
+    background-color: seagreen;
+    width: 200px;
+    height: 60px;
+    padding: 10px;
+}
+
+.item5, .item8 {
+    background-color:hotpink;
+    width: 200px;
+    height: 60px;
+    padding: 10px;
+}
+
+.item6, .item9 {
+    background-color:darkturquoise;
+    width: 200px;
+    height: 60px;
+    padding: 10px;
+}
