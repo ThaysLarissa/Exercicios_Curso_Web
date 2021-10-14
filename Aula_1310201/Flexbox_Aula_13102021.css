@@ -1,0 +1,57 @@
+@charset "utf-8";
+.container {
+    display:flex;
+}
+
+.container div {
+ border: 1px #ccc solid;
+ padding: 10px;
+}
+
+.item-box-1 {
+    flex: 2;
+    order: 2;
+}
+
+.item-box-2 {
+    flex: 1;
+    order: 1;
+}
+
+.item-box-3 {
+    flex: 1;
+    order: 3;
+}
+
+/*Exercicio*/
+
+.container1 {
+    display:flex;
+    align-items: flex-end;
+}
+
+.container1 div {
+ border: 1px #ccc solid;
+ padding: 10px;
+}
+
+.item-box-4 {
+    flex: 2;
+    order: 2;
+    align-self: flex-start;
+}
+
+.item-box-5 {
+    flex: 2;
+    order: 1;
+}
+
+.item-box-6 {
+    flex: 2;
+    order: 4;
+}
+
+.item-box-7 {
+    flex: 2;
+    order: 3;
+}
