@@ -1,0 +1,22 @@
+/*Cor de fundo em RGB --- */
+
+body{
+    background: rgb(88, 22, 11);
+}
+/*Cor de fundo por Nome --- */
+div{
+    background: lightpink;
+}
+/*Cor do texto por hexadecimal --- */
+.text1{
+    color:	#20B2AA;
+}
+
+/*Cor do texto por hexa abreviado --- */
+.text2{
+    color: #F00;
+}
+/*Cor do texto por HSL --- */
+.text3{
+    color:hsl(66, 72%, 29%);
+}

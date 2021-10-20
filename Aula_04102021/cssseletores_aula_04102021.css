@@ -1,0 +1,39 @@
+body{
+    background: lightblue;
+}
+
+#titulo{
+    text-align: center;
+    text-decoration:overline;
+    text-shadow: 2px 2px rgb(223, 135, 104);
+}
+
+#text1{
+    font-size: 20px;
+    line-height: 1.5;
+    text-indent: 80px;
+    color: rgb(119, 59, 37);
+}
+
+.text2{
+    font-size: 25px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: darkblue;
+    text-indent: 45px;
+}
+
+#text3{
+    font-size: 18px;
+    color: rgb(36, 20, 20);
+    text-indent: 20px;
+    text-shadow: 2px 2px rgb(59, 20, 50);
+    font-weight: bold;
+}
+
+.text4{
+    font-style: italic;
+    text-indent: 80px;
+    font-size: 25px;
+    line-height: 1.25;
+    color: seagreen;
+}

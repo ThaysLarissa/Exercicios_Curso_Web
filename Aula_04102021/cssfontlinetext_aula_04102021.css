@@ -1,0 +1,22 @@
+h1{
+    text-align: center;
+    text-shadow: 5px 2px red;
+}
+
+.text1{
+    text-align:right ;
+    text-shadow: 2px 2px lightseagreen;
+}
+
+.text2{
+    text-align: left;
+    text-indent: 50px;
+    line-height: 1.5;
+    font-weight: bold;
+}
+
+.text3{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 25px;
+    line-height: 1.5;
+}

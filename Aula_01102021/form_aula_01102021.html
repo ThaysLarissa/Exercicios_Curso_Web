@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <title>Forms em HTML</title>
+        <meta charset="utf-8" />
+    </head>
+    <body>
+        <header>
+            <h1>Cadastro de Alunas</h1>
+        </header>
+        <article>
+            <form action="#">
+                
+                <!--Exemplo de form com Input e Label-->
+
+                <label for="cNome">Nome de Alunas</label><br />
+                <input type="text" size=30 name="tNome" id="cNome" required="required" /><!--Required é o comando que exige que o campo seja preenchido para ser enviado-->
+
+                <br/>
+                <br/>
+
+                <label for="cNome">Nota da Auluna</label><br />
+                <input type="text" size=30 name="tNome" id="cNome" required="required" /><!--Required é o comando que exige que o campo seja preenchido para ser enviado-->
+
+                <br/>
+                <br/>
+
+                <label for="cNome">Ano Escolar</label><br />
+                <input type="text" size=30 name="tNome" id="cNome" required="required" /><!--Required é o comando que exige que o campo seja preenchido para ser enviado-->
+
+                <br/>
+                <br/>
+                
+                <input type="submit" value="Enviar" /><!--Botão de enviar/resetar/excluir-->
+
+                <br/>
+                <br/>
+            
+        
+                <!--Bloco de seleção (unica escolha)-->
+                <h3>Escolha a sua cidade</h3>
+                <input type="radio" name="tipo" id="cid" value="C" />
+                <label for="cid">São Paulo</label><br />
+                <input type="radio" name="tipo" id="cid" value="C" />
+                <label for="cid">Mauá</label><br />
+                
+                <input type="radio" name="tipo" id="cid" value="C" />
+                <label for="cid">Santo André</label><br />
+                
+
+                <!--Bloco de seleção checkbox (multipla escolha)-->
+                <h3>Musica</h3>
+                <input type="checkbox" name="tipo" id="bts" value="C" />
+                <label for="bts">BTS</label><br />
+
+                <input type="checkbox" name="tipo" id="ex" value="C" />
+                <label for="ex">Exalta Sama</label><br />
+
+                <input type="checkbox" name="tipo" id="mat" value="C" />
+                <label for="mat">Matuê</label><br />
+
+                <br>
+                <br>
+
+                <!--Elemento select (lista suspensa)-->
+
+                <h3>Escolha a sua comida preferida</h3>
+
+                <select name="comida" id="comida">
+                    <option value="feijoada">Feijoada</option>
+                    <option value="strogonoff">Strogonoff</option>
+                    <option value="suhi">Sushi</option>
+                    <option value="lasanha">Lasanha</option>
+                    <option value="creme">Creme de Milho</option>
+                    <option value="maionese">Maionese</option>
+                </select>
+
+                <br>
+                <br>
+
+                <!--Elemento datalist (lista suspensa)-->
+
+                <fieldset>
+                    <legend>Escolha a seu browser preferido</legend>
+                        <input list="browsers">
+                            <datalist id="browsers">
+                                <option value="Chrome">
+                                <option value="Firefox">
+                                <option value="Internet Explorer">
+                                <option value="Opera">
+                                <option value="Safari">
+                                <option value="Edge">
+                            </datalist>
+                    </fieldset>
+
+                    <br>
+                    <br>
+    
+                    <!--Iniciando textarea-->
+                    <h3>Critique alguma série</h3>
+                    <textarea name="critica" id="critica" cols="30" rows="10"></textarea>
+
+                    <br>
+                    <br>
+    
+                    <!--type range-->
+                    <fieldset>
+                        <legend>Exemplo range e output:</legend>
+                        0
+                        <input type="range" id="valor_01" name="valor_01" />
+                        100
+                    </fieldset>
+                    
+                
+            </form>
+        </article>
+
+        <footer>
+            <small>Copyright<sup>&copy;</sup> - Todos os direitos reservados.</small>
+        </footer>
+    </body>
+</html>
