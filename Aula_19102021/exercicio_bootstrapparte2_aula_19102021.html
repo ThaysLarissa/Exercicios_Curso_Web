@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+    <head>
+        <meta charset="UTF-8">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css"rel="stylesheet" integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0" crossorigin="anonymous">
+        <title>Exemplo Bootstrap – Parte 02</title>
+    </head>
+
+    <body>
+
+
+        <section class="container"><!-- Formulários -->
+        <form action="#">
+        <label class="form-label">Qual é o seu nome?</label>
+        <input type="text" class="form-control" placeholder="Digite aqui o seu nome"><br>
+
+        <label class="form-label">Qual a sua idade?</label>
+        <input type="text" class="form-control form-controlsm" placeholder="Digite aqui a sua idade"><br>
+
+        <label class="form-label">Me passa seu whats.</label>
+        <input type="email" class="form-control form-controllg" placeholder="Digitr aqui o seu numero de telefone celular"><br>
+
+        <label>Vamos conversar?!</label>
+        <textarea class="form-control" placeholder="Me conta um pouco sobre você."></textarea>
+
+        <br>
+
+        <hr>
+
+
+        <label>Você é de qual sexo?</label>
+        <select name="" id="" class="form-control">
+                    <option value="feminino">Feminino</option>
+                    <option value="masculino">Masculino</option>
+                    <option value="outros">Outros</option>
+                    <option value="naodeclarado">Prefiro nao declarar</option>
+        </select>
+        <br>
+
+        <hr>
+
+        <label for="exampleDataList" class="form-label">Mora em qual cidade?</label>
+        <input class="formcontrol" list="datalistOptions" id="exampleDataList" placeholder="Digite uma cidade...">
+        <datalist id="datalistOptions">
+                    <option value="Belo Horizonte"></option>
+                    <option value="São Paulo"></option>
+                    <option value="Santos"></option>
+                    <option value="Porto Alegre"></option>
+                    <option value="Recife"></option>
+                    <option value="Outra"></option>
+        </datalist>
+
+        <br>
+        <hr>
+
+        <label class="form-label">Me manda a sua foto mais legal</label>
+        <input type="file">
+        <br>
+        <span class="form-text">
+                    Apenas arquivos png e jpg.
+        </span>
+
+        <br>
+        <hr>
+
+        <label for="exampleColorInput" class="form-label">Qual a sua cor preferida?</label>
+        <input type="color" class="form-control form-controlcolor" id="exampleColorInput" value="#021BFC" title="Escolha a sua Cor">
+
+        <br>
+        <hr>
+
+        <button type="submit" class="btn-outline-secondary btn-lg">Enviar</button><!--Botão-->
+
+        <br>
+        <hr>
+
+        <section class="container"><!-- Tabela Primeiro Exemplo -->
+                    <table class="table table-striped">
+                        <thead>
+                            <tr>
+                                <th scope="col">#</th>
+                                <th scope="col">Primeiro Nome</th>
+                                <th scope="col">Hierarquia</th>
+                                <th scope="col">Idade</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th scope="row">1</th>
+                                <td>Guilherme</td>
+                                <td>Papai</td>
+                                <td>50</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">2</th>
+                                <td>Thays</td>
+                                <td>Mamãe</td>
+                                <td>2</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">3</th>
+                                <td>Malik</td>
+                                <td>Bebê</td>
+                                <td>11 meses</td>
+                            </tr>
+                            </tbody>
+                    </table>
+                    <br>
+                    <hr>
+        </section>
+
+        <table class="table table-bordered table-hover table-sm"><!-- Tabela Segundo Exemplo -->
+            <caption>Tabela 01: Aniversários para o Malik comemorar</caption>
+                <thead>
+                        <tr>
+                            <th scope="col">Mês</th>
+                            <th scope="col">Aniversariantes</th>
+                        </tr>
+                </thead>
+                <tbody>
+                        <tr class="table-primary">
+                            <td>Janeiro</td>
+                            <td>Vovô Claudemar</td>
+                        </tr>
+                        <tr class="table-success">
+                            <td>Fevereiro</td>
+                            <td>Vovó Simone e Mamãe Thays</td>
+                        </tr>
+                        <tr class="table-danger">
+                            <td>Março</td>
+                            <td>Vovó Priscila</td>
+                        </tr>
+                        <tr class="table-warning">
+                            <td>Abril</td>
+                            <td>Papai Guilherme</td>
+                        </tr>
+                        <tr class="table-primary">
+                            <td>Julho</td>
+                            <td>Vovô Paulo</td>
+                        </tr>
+                        <tr class="table-success">
+                            <td>Novembro</td>
+                            <td>Bebê Malik</td>
+                        </tr>
+                </tbody>
+        </table>
+        <br>
+        <hr>
+
+        <div class="list-group"><!-- Lista com botões -->
+            <button type="button" class="list-group-item list-group-item-action active" ariacurrent="true">Familia Leal</button>
+            <button type="button" class="list-group-item list-group-itemaction">Guilherme Leal</button>
+            <button type="button" class="list-group-item list-group-itemaction">Thays Leal</button>
+            <button type="button" class="list-group-item list-group-itemaction">Malik Leal</button>
+                
+        </div>
+        <br>
+        <hr>
+
+        
+        <ul class="list-group list-group-flush"><!-- Lista com efeito flush -->
+            <li class="list-group-item">Levar o bebe pra escola</li>
+            <li class="list-group-item">Arrumar a casa</li>
+            <li class="list-group-item">Lavar roupas</li>
+            <li class="list-group-item">Colocar as atividades em dia</li>
+        </ul>
+        <br>
+        <hr>
+
+        <section class="container"><!-- Cards -->
+        <div class="card" style="width: 18rem;">
+            <img src="./img/sobre-ios.png" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">O que mais gostamos de fazer?</h5>
+                <p class="cardtext">Varios nadas, juntos, em casa, debaixo das cobertas, com muita comida e refrigerante. Só assistindo filmes e séries aleatorias.</p>
+                <a href="#" class="btn btn-dark">Saiba Mais</a>
+            </div>
+        </div>
+   
+        <br>
+        <hr>
+
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-p34f1UUtsS3wqzfto5wAAmdvj+osOnFyQFpp4Ua3gs/ZVWx6oOypYoCJhGGScy+8" crossorigin="anonymous"></script>
+
+    </body>
+
+
+
+</html>
