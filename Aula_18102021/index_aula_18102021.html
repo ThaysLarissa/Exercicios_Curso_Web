@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+            integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+        <title> Booststrap Exemplo </title>
+    </head>
+
+    <body>
+
+        <!-- Painel de navegação-->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">Bootstrap Navbar</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" ariacontrols="navbarSupportedContent" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="conteudoNavbarSuportado">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#">Home <span class="sr-only">(página atual)</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Link</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Dropdown
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="#">Ação</a>
+                                <a class="dropdown-item" href="#">Outra ação</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="#">Algo mais aqui</a>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link disabled" href="#">Desativado</a>
+                        </li>
+                    </ul>
+                    <form class="form-inline my-2 my-lg-0">
+                        <input class="form-control mr-sm-2" type="search" placeholder="Pesquisar" aria-label="Pesquisar">
+                        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Pesquisar</button>
+                    </form>
+                </div>
+
+            </div>
+        </nav>
+
+
+        <header class="p-5 bg-warning">
+            <div class="container-fluid py-5">
+                <h1 class="display-5 fw-bold">Bem-vindo ao meu Website</h1>
+                <p class="col-md-8 fs4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione
+                    eligendi vitae atque nesciunt. Ducimus veritatis, praesentium quo delect
+                    us ut numquam.</p>
+                <a class="btn btn-primary btn-lg" href="#" role="button">Aprenda Mais</a>
+            </div>
+        </header>
+
+        <!-- Tipografia -->
+        <section class="container text-center">
+            <h1 class="pb-2 mt-4 mb-2 borderbottom">Hello, world! <small>Secondary text</small></h1>
+            <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaeca
+                ti, laborum? Placeat non est
+                facere
+                recusandae fugiat voluptatum</p>
+            <p><mark>Lorem ipsum dolor sit amet</mark> consectetur adipisicing elit. Obcaeca
+                ti, laborum? Placeat non est.
+                Delectus consequuntur <del>laudantium repellat dolorum labore</del> tenetur,
+                <u>voluptatem
+                    necessitatibus</u> rerum eveniet. Esse deserunt ducimus atque iure conse
+                quatur at cum reiciendis nihil
+                soluta labore perferendis.</p>
+            <hr>
+        </section>
+
+        <!-- Alinhamento & Transformação-->
+        <section class="container">
+            <p class="text-start textlowercase">Texto alinhado à esquerda da área de visualização.</p>
+            <p class="text-center textuppercase">Texto alinhado centralizado na área de visualização.</p>
+            <p class="text-end">Texto alinhado à direta da área de visualização.</p>
+            <p class="textnowrap">Texto sem quebra de linha. Lorem ipsum dolor sit amet consectetur, adipisicing e
+                lit.
+                Aliquid perspiciatis sed quia expedita? Id cupiditate dicta magni fugiat nul
+                la voluptatibus ratione
+                accusantium!
+            </p>
+            <hr>
+        </section>
+
+
+
+        <section class="container">
+            <!-- Floats -->
+            <div class="float-start">Float no início da área de visualização</div><br>
+            <div class="float-end">Float no final da área de visualização</div><br>
+            <div class="float-none">Sem float na área de visualização</div>
+            <!-- Limpa o Float -->
+            <div class="clearfix"></div>
+            <hr>
+        </section>
+
+        <!-- Blockquuote -->
+        <section class="container">
+            <blockquote class="blockquote">
+                <p>A juventude é a época de se estudar a sabedoria; a velhice é a época de a
+                    praticar.</p>
+                <figcaption class="blockquote-footer">
+                    <cite title="Source Title">Jean-Jacques Rousseau</cite>
+                </figcaption>
+            </blockquote>
+            <hr>
+        </section>
+
+
+        <!-- Listas -->
+        <section class="container">
+            <ul class="list-unstyled">
+                <li>Item um</li>
+                <li>Item dois</li>
+                <li>Item três</li>
+                <li>Item quatro</li>
+            </ul>
+            <ul class="list-inline">
+                <li class="list-inline-item">Item um</li>
+                <li class="list-inline-item">Item dois</li>
+                <li class="list-inline-item">Item três</li>
+                <li class="list-inline-item">Item quatro</li>
+            </ul>
+            <ol>
+                <li>Item um</li>
+                <li>Item dois</li>
+                <li>Item três</li>
+                <li>Item quatro</li>
+            </ol>
+            <hr>
+        </section>
+
+        <!-- Código -->
+        <section class="container">
+            <code>&lt;h1&gt;Heading Text&lt;/h1&gt;</code>
+            <br><br>
+            Mude de diretório com o comando <kbd>cd</kbd>
+            <br><br>
+            Para acessar as configurações de edição, pressione <kbd><kbd>ctrl</kbd> + <kbd>,
+                </kbd></kbd>
+            <hr>
+        </section>
+
+
+        <section class="container">
+            <!-- Cores textuais -->
+            <p class="text-primary">Olá Mundo com a cor do texto: text-primary</p>
+            <p class="text-success">Olá Mundo com a cor do texto: text-success</p>
+            <p class="text-info">Olá Mundo com a cor do texto: text-info</p>
+            <p class="text-warning">Olá Mundo com a cor do texto: text-warning</p>
+            <p class="text-danger">Olá Mundo com a cor do texto: text-danger</p>
+            <p class="text-muted">Olá Mundo com a cor do texto: text-muted</p>
+            <p class="text-black-50">Olá Mundo com a cor do texto: text-black-50</p>
+
+            
+            <!-- Cores de plano de fundo -->
+            <p class="bg-primary">Olá Mundo com a cor de fundo: bg-primary</p>
+            <p class="bg-success">Olá Mundo com a cor de fundo: bg-success</p>
+            <p class="bg-info">Olá Mundo com a cor de fundo: bg-info</p>
+            <p class="bg-warning">Olá Mundo com a cor de fundo: bg-warning</p>
+            <p class="bg-danger">Olá Mundo com a cor de fundo: bg-danger</p>
+            <p class="bg-muted">Olá Mundo com a cor de fundo: bg-muted</p>
+
+            
+            <!-- Combinação dos estilos -->
+            <p class="text-white bg-dark">Olá Mundo com a cor do texto: textwhite, e a cor do fundo: bg-dark</p>
+            <p class="text-white-50 bg-success">Olá Mundo com a cor do texto: text-white50, e a cor do fundo: bg-success
+            </p>
+            <hr>
+        </section>
+
+        <section class="container">
+            <!-- Botões -->
+            <button class="btn btn-outline-secondary">Botão Um</button>
+            <a href="#" class="btn btn-outline-secondary" role="button">Botão Dois</a>
+            <input type="submit" class="btn btn-outline-secondary" value="Enviar">
+            <br><br>
+        </section>
+
+        <hr>
+
+        <!-- Botões Contextuais -->
+        <button class="btn btn-primary">Primary</button>
+        <button class="btn btn-secondary">Secondary</button>
+        <button class="btn btn-success">Success</button>
+        <button class="btn btn-info">Info</button>
+        <button class="btn btn-warning">Warning</button>
+        <button class="btn btn-danger">Danger</button>
+
+        <hr>
+
+        <!-- Tamanho de Botões -->
+        <button class="btn btn-outline-secondary btn-lg">Botão Um</button>
+        <button class="btn btn-primary btn-sm">Primary</button>
+        <button class="btn btn-secondary" disabled="disabled">Secondary</button>
+        <br><br>
+        </section>
+
+        <!-- Efeito dos botões -->
+        <button type="button" class="btn btn-outline-primary">Primary</button>
+        <button type="button" class="btn btn-outline-secondary">Secondary</button>
+        <button type="button" class="btn btn-outline-success">Success</button>
+        <button type="button" class="btn btn-outline-danger">Danger</button>
+        <button type="button" class="btn btn-outline-warning">Warning</button>
+        <button type="button" class="btn btn-outline-info">Info</button>
+        <button type="button" class="btn btn-outline-light">Light</button>
+        <button type="button" class="btn btn-outline-dark">Dark</button>
+        <hr>
+        </section>
+
+
+
+
+
+
+
+
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+            integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+        </script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+            integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous">
+        </script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+            integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous">
+        </script>
+
+    </body>
+
+
+
+
+
+
+</html>
