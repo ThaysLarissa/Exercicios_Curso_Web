@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-
+        wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0"
+      crossorigin="anonymous
+        "
+    />
+    <link rel="stylesheet" href="bootstrap_layout_aula_25102021.css" />
+    <title>Layout com Bootstrap</title>
+  </head>
+
+  <body>
+    <!-- Início da Parte 1 do Menu de Navegação -->
+    <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
+
+      <!-- Início da Parte 2 do Menu de Navegação -->
+      <div class="container-fluid">
+        <a class="navbar-brand" href="index.html">
+          <img src="./img/logo_ios.svg" alt="" />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          ariacontrols="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Início da Parte 3 do Menu de Navegação -->
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+          <!-- Início da Parte 4 do Menu de Navegação -->
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0 fs-6">
+
+            <!-- Início da Parte 5 do Menu de Navegação -->
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdowntoggle"
+                href="#"
+                id="navbarDropdownMenuLink"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Sobre Nós
+              </a>
+              <ul
+                class="dropdown-menu bg-roxo"
+                arialabelledby="navbarDropdownMenuLink"
+              >
+                <li>
+                  <a class="dropdown-item" href="https://ios.org.br/quemsomos/"
+                    >Quem Somos</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="dropdown-item"
+                    href="https://ios.org.br/transparencia/"
+                    >Transparência</a
+                  >
+                </li>
+              </ul>
+            </li>
+          
+          <!-- Início da Parte 6 do Menu de Navegação -->
+
+          <li class="nav-item">
+            <a class="nav-link" href="https://ios.org.br/paravoce/"
+              >Para Você</a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://ios.org.br/para-suaempresa/"
+              >Para Sua Empresa</a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://doe.ios.org.br/">Doe</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://ios.org.br/contato/">Contato</a>
+          </li>
+          </ul>
+        </div>
+          <!-- Início da Parte 7 do Menu de Navegação -->
+          <div class="d-flex justify-content-end align-items-center">
+            
+
+            <!-- Início da Parte 8 do Menu de Navegação -->
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                <a class="nav-link" href="https://www.facebook.com/IOS.Oficial" target="_blank"><i
+                class="bi bi-facebook fs-2" style="font-size: 25px;"></i></a>
+                </li>
+
+                <!-- Início da Parte 9 do Menu de Navegação -->
+                <li class="nav-item">
+                    <a class="nav-link" href="https://www.instagram.com/iosoficial"><i
+                    class="bi bi-instagram fs-2" style="font-size: 25px;"></i></a>
+                    </li>
+                   <li class="nav-item">
+                    <a class="nav-link" href="https://www.linkedin.com/company/iosoficial/"><i
+                    class="bi bi-linkedin fs-2" style="font-size: 25px;"></i></a>
+                    </li>
+                   <li class="nav-item">
+                    <a class="nav-link" href="https://www.youtube.com/c/IOSOficial"><i
+                    class="bi bi-youtube fs-2" style="font-size: 25px;"></i></a>
+                    </li>
+            </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Carousel do Site -->
+    <section class="showcase">
+      <div
+        id="carouselExampleCaptions"
+        class="carousel slide"
+        data-bs-ride="carousel"
+      >
+        <div class="carousel-indicators">
+          <button
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide-to="0"
+            class="active"
+            aria-current="true"
+            aria-label="Slide 1"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide-to="1"
+            aria-label="Slide 2"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide-to="2"
+            aria-label="Slide 3"
+          ></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="./img/foto_banner.png" class="d-block w-100" alt="..." />
+            <div class="carousel-caption d-none d-md-block">
+              <h3>#VemProIOS</h3>
+              <p>
+                Você pode fazer acontecer em 2021! Cursos nas modalidades online
+                e semipresencial. Não tem internet? O IOS disponibiliza acesso
+                gratuito às pla taformas!.
+              </p>
+              <button
+                class="btn bg-alaranjado"
+                href="https://ios.org.br/ficha-de-inscricao/"
+              >
+                Saiba Mais
+              </button>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="./img/foto_natotvs.jpg" class="d-block w-100" alt="..." />
+            <div class="carousel-caption d-none d-md-block">
+              <h3>Relatório de atividades 2019</h3>
+              <p>
+                Conheça nossa atuação, indicadores de sucesso e como proporci
+                onamos oportunidades aos nossos alunos.
+              </p>
+              <button
+                class="btn bg-roxo"
+                href="https://ios.org.br/transparencia/#relatorio-anual"
+              >
+                Saiba Mais
+              </button>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="./img/foto_alunos.jpg" class="d-block w-100" alt="..." />
+            <div class="carousel-caption d-none d-md-block">
+              <h3>Lista de Aprovados 1º Semestre 2021</h3>
+              <p>Veja a lista dos candidatos aprovados.</p>
+              <button
+                class="btn bg-azul-claro"
+                href="https://ios.org.br/aprovados/"
+              >
+                Saiba Mais
+              </button>
+            </div>
+          </div>
+        </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Anterior</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Próximo</span>
+        </button>
+      </div>
+    </section>
+
+    <!-- Grid da página -->
+    <section class="container row mt-5 ms-4">
+      <div class="container col-12 col-md-4">
+        <div
+          class="shadow-lg p-3 mb-5 bgbody rounded sobre_ios"
+          style="height: 250px"
+        >
+          <h5 class="m-3 texto-roxo">
+            <img src="./img/ios_grid.png" alt="" />
+            Sobre o IOS
+          </h5>
+          <p class="m3" style="height: 80px">
+            Conheça nosso trabalho, estratégia de atuação e unidades.
+          </p>
+          <a class="texto-roxo m-3" href="https://ios.org.br/quemsomos/"
+            >Saiba mais<i class="bi bi-arrow-right-short"></i
+          ></a>
+        </div>
+      </div>
+      <div class="container col-12 col-md-4">
+        <div
+          class="shadow-lg p-3 mb-5 bgbody rounded para_voce"
+          style="height: 250px"
+        >
+          <h5 class="m-3">
+            <img src="./img/pravoce_grid.png" alt="" />
+            Para Você
+          </h5>
+          <p class="m3" style="height: 80px">
+            Conheça nossos cursos e linha pedagógica, bem como novidades so bre
+            carreira e oportunidades.
+          </p>
+          <a class="texto-alaranjado m-3" href="https://ios.org.br/paravoce/"
+            >Saiba mais<i class="bi bi-arrow-right-short"></i
+          ></a>
+        </div>
+      </div>
+      <div class="container col-12 col-md-4">
+        <div
+          class="shadow-lg p-3 mb-5 bgbody rounded para_empresa"
+          style="height: 250px"
+        >
+          <h5 class="m-3">
+            <img src="./img/empresa_grid.png" alt="" />
+            Para sua empresa
+          </h5>
+          <p class="m3" style="height: 80px">
+            Apoie a empregabilidade de jovens e pessoas com deficiência. Conheça
+            nosso trabalho e venha com a gente nessa causa!
+          </p>
+          <a
+            class="texto-azul-claro m-3"
+            href="https://ios.org.br/para-suaempresa/"
+            >Saiba mais<i class="bi bi-arrow-right-short"></i
+          ></a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Rodapé -->
+    <footer class="bg-roxo">
+      <div class="row ms-5 me-5">
+        <div class="col-6 col-md-4 mt-4">
+          <img src="./img/logo_ios_branca.png" />
+          <p class="fw-normal mt3">
+            O IOS existe desde 1998 e oferece formação profissional gratuita
+            para jovens e Pessoas com Deficiência
+          </p>
+        </div>
+        <div class="col-6 col-md-2 mt-4">
+          <h5 class="fw-bold mb-3">Mapa do site</h5>
+          <ul class="list-unstyled">
+            <li>
+              <a class="fw-normal text-light text-decorationnone" href="#"
+                >Sobre o IOS</a
+              >
+            </li>
+            <li>
+              <a class="fw-normal text-light text-decorationnone" href="#"
+                >Para você</a
+              >
+            </li>
+            <li>
+              <a class="fw-normal text-light text-decorationnone" href="#"
+                >Para sua empresa</a
+              >
+            </li>
+            <li>
+              <a class="fw-normal text-light text-decorationnone" href="#"
+                >Doe</a
+              >
+            </li>
+            <li>
+              <a class="fw-normal text-light text-decorationnone" href="#"
+                >Imprensa</a
+              >
+            </li>
+            <li>
+              <a class="fw-normal text-light text-decorationnone" href="#"
+                >Contato</a
+              >
+            </li>
+          </ul>
+        </div>
+        <div class="col-6 col-md-3 mt-4">
+          <h5 class="fw-bold mb-3">Como se inscrever</h5>
+          <p class="fw-normal">
+            Nossos cursos são gratuitos! Se você tem entre 15 e 29 anos ou mais
+            de 16 anos e deficiência físi ca, auditiva ou visual; e já concluiu
+            ou está cursando o Ensino Médio, vem para o IOS!
+          </p>
+          <button
+            class="btn bg-alaranjado"
+            href="https://ios.org.br/ficha-deinscricao/"
+          >
+            Inscreva-se
+          </button>
+        </div>
+        <div class="col-6 col-md-3 mt-4">
+          <h5 class="fw-bold mb-3">Como apoiar</h5>
+          <p class="fwnormal">
+            A educação é a melhor maneira de mudar o mundo. Vamos fazer isso
+            juntos?
+          </p>
+          <button
+            class="btn bg-azul-claro"
+            href="https://ios.org.br/ficha-deinscricao/"
+          >
+            Doe agora
+          </button>
+        </div>
+      </div>
+      <hr />
+      <div class="container bg-roxo">
+        <p class="fw-normal p-3 textcenter">
+          &copy; IOS – Todos os direitos reservados
+        </p>
+      </div>
+    </footer>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-p34f1UUtsS3wqzfto5wAAmdvj+osOnFyQFpp4Ua3gs/ZVWx6oOypYoCJhGGScy+8"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
