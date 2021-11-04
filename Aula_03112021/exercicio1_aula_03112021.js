@@ -1,46 +1,54 @@
 
 const frutas1 = ['Joaquim', 'José', 'Silva', 'Xavier'];
+let a = frutas1
+
 console.log(frutas1);
 
-// Inserir e Amanda
-console.clear();
-const frutas4 = ['Banana', 'Laranja'];
-let w = frutas4.unshift('Kiwi'); // w = 3
 
-console.log(frutas4);
-console.log(w);
+
+// Inserir e Amanda
+//unshift
+const frutas2 = ['Joaquim', 'José', 'Silva', 'Xavier'];
+let w = frutas2.unshift('Amanda'); // w = 3
+
+console.log(frutas2);
+
 
 // Remover e Amanda
-console.clear();
-const frutas3 = ['Banana', 'Laranja'];
-let z = frutas3.shift(); // z = 'Banana'
+//shift
+const frutas3 = ['Amanda', 'Joaquim', 'José', 'Silva', 'Xavier'];
+let z = frutas3.shift(); // z = 'Amanda'
 
 console.log(frutas3);
-console.log(z);
 
 // Remover e Xavier
 // pop()
-let x = frutas1.pop(); // x = "Xavier saiu"
+const frutas4 = ['Joaquim', 'José', 'Silva', 'Xavier'];
+let x = frutas4.pop(); // x = "Xavier saiu"
 
-console.log(frutas1);
-console.log(x) ;
+console.log(frutas4);
 
 
 
 // Inserir e Zuleica
 // push()
-
-const frutas2 = ['Joaquim', 'José', 'Silva'];
-let y = frutas2.push('Zuleica'); // y = Zuleica
-
-console.log(frutas2);
-console.log(y);
-
-
-// delete Silva e entra a Silvana
-console.clear();
-const frutas5 = ['Banana', 'Laranja', 'Maçã', 'Manga'];
-delete frutas5[2];
+const frutas5 = ['Joaquim', 'José', 'Silva'];
+let y = frutas5.push('Zuleica'); // y = Zuleica
 
 console.log(frutas5);
+
+
+// Remover Silva e inserir a Silvana
+//delete
+const frutas6 = ['Joaquim', 'José', 'Silva', 'Zuleica'];
+delete frutas6[2];
+
+console.log(frutas6);
+
+
+const frutas7 = ['Joaquim', 'José', 'Silvana', 'Zuleica'];
+let b = frutas7
+
+console.log(frutas7);
+
 
