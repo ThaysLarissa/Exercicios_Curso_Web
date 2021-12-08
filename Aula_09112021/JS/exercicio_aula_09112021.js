@@ -40,7 +40,7 @@ let newSalario = funcionarios.map((novoSalario) =>{
    
 });
 
-console.log(`Com o reajuste: ${newSalario} `)
+console.log(`Com o reajuste os salarios passaram a ser: $${newSalario} `)
 console.log('')
 
 //Quem recebe => 5000
@@ -48,7 +48,7 @@ let filtroSalario = newSalario.filter((salari) =>{
     return salari >= 5000;
 })
 
-console.log(`O salário mais alto: ${filtroSalario}`);
+console.log(`O salário mais alto: $${filtroSalario} reais`);
 console.log('')
 
 

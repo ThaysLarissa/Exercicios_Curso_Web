@@ -98,3 +98,17 @@ console.log(filtroCompletas);
             return frutas.nome === 'cherrys'
         })
     );
+
+    //teste map com array de objetos
+    console.clear();
+    let testeMap = meuArray.map((fruit) => {
+        let novo = Object.assign({}, fruit);
+        novo.quantidade++;
+
+        return novo;
+    });
+
+    console.log('Antes: ');
+    console.log(meuArray);
+    console.log('Adicionando 1 unidade de cada fruta: ');
+    console.log(testeMap);
