@@ -49,6 +49,6 @@ console.log(frutas6);
 const frutas7 = ['Joaquim', 'José', 'Silvana', 'Zuleica'];
 let b = frutas7
 
-console.log(frutas7);
+console.log('Ficaram ' + b.length + ' pessoas na festa, que eram: ' + frutas7);
 
 

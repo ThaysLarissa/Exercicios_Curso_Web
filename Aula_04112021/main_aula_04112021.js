@@ -59,7 +59,8 @@ const nota = 6;
 switch (nota){
 
     case 4:
-        console.log("Reprovado!");
+        console.log("R
+        eprovado!");
         break;
 
         case 6:
