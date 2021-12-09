@@ -1,74 +1,72 @@
-// DOM - PARTE 4: Formulário
+/// formulário
 
-// Método querySelector: colocar cor no botão "Enviar"
-const btn = document.querySelector('.btn');
+// Método querySelector
+const btn = document.querySelector('.botao');
 btn.style.background = 'red';
 
-// Busca   elementos do Formulário
-const myForm = document.querySelector('#my-form'); //Formulario
-const nameInput = document.querySelector('#name'); //Campo nome
-const emailInput = document.querySelector('#email'); //Campo Data de Nascimento
-const horario = document.querySelector('#horario'); //campo Cor
-const msg = document.querySelector('.msg'); //msg do Campo nome
-const msg_email = document.querySelector('.msg_email'); // msg do campo Data de Nascimento
-const userList = document.querySelector('#users'); // usuários
+// Busca pelos elementos do Formulário
+const myForm = document.querySelector('#my-form');
+const nameInput = document.querySelector('#name');
 
-// Método addEventListener: Adicionando Evendo (onSubmit)
+const date = document.querySelector('#date');
+const msg = document.querySelector('.msg');
+
+const cor = document.querySelector('#cor'); //campo Cor
+
+const userList = document.querySelector('#users');
+const dateMsg = document.querySelector('.msg_data');
+
+// Método addEventListener
 myForm.addEventListener('submit', onSubmit);
 
 // Função onSubmit
 function onSubmit(e) {
     e.preventDefault();
-    let ano = new Date().getFullYear()
+    let ano = new Date().getFullYear();
 
-    const temp = new Date(email.value).getFullYear()
-    // console.log(nameInput.value);
-    if (nameInput.value === '' || emailInput.value === '') {
+    const temp = new Date(date.value).getFullYear();
+
+    // let anoInput = parseInt(date.value.split('-')[0], 10) //Transformando string em decimal
+    if (nameInput.value === '' || date.value === '') {
         // alert('Por favor, preencha os dados.');
         msg.classList.add('error');
         msg.innerHTML = 'Por favor, preencha os dados.';
         setTimeout(() => msg.remove(), 3000);
-  
-
-    }else if((ano - temp) < 18){
-            emailMsg.classList.add('error'); 
-            emailMsg.innerHTML = 'Menor de idade';
-            setTimeout(() => emailMsg.remove(), 3000);
-    
-    }else {
+    } else if (ano - temp < 18) {
+        dateMsg.classList.add('error');
+        dateMsg.innerHTML = 'Menor de idade';
+        setTimeout(() => dateMsg.remove(), 3000);
+    } else {
         // console.log('sucess');
         const li = document.createElement('li');
         li.appendChild(
-        document.createTextNode(
-                `${nameInput.value}, nascido(a) em ${emailInput.value} e de cor ${horario.value}`
+            document.createTextNode(
+                `${nameInput.value} : ${date.value} : ${cor.value}`
             )
         );
-        
-        
-         userList.appendChild(li);
-        
+        userList.appendChild(li);
+
         //create span
         const mySpan = document.createElement('span');
-        mySpan.innerHTML = 'x'
-        li.appendChild(mySpan); 
+        mySpan.innerHTML = 'x';
+        li.appendChild(mySpan);
 
         // Botão delete
         const close = document.querySelectorAll('span');
-        for(let i=0; i < close.length; i++){
-            close[i].addEventListener('click', () =>{
+        for (let i = 0; i < close.length; i++) {
+            close[i].addEventListener('click', () => {
                 close[i].parentElement.style.opacity = 0;
-                
-                setTimeout(() =>{
+
+                setTimeout(() => {
                     close[i].parentElement.style.display = 'none';
                     close[i].parentElement.remove();
-    
                 }, 500);
             });
         }
-         // Limpa o formulário
-            nameInput.value = '';
-            email.value = '';
-            email.getElementsByTagName('li')[0].selected = 'selected';
-            nameInput.focus(); //Coloca o foco no elmento
+        // Limpa o formulário
+        nameInput.value = '';
+        date.value = '';
+        date.getElementsByTagName('li')[0].selected = 'selected';
+        nameInput.focus(); //Coloca o foco no elmento
     }
 }
