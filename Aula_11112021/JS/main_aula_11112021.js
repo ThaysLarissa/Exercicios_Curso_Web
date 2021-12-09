@@ -86,3 +86,21 @@ console.log(pessoa1);
 console.log(pessoa1.dob.getFullYear());
 console.log(pessoa1.getBirthYear());
 console.log(pessoa1.getFullName());
+
+//PROTOTYPE
+
+PessoaFunc.prototype.getBirthDayMonth = function () { 
+
+    let dados = [this.dob.getDate(), this.dob.getMonth() + 1]; 
+    
+    return dados; 
+    
+    }; 
+    
+     
+    
+    PessoaFunc.prototype.getFirstName = function () { 
+    
+    return `${this.firstName}`; 
+    
+    }; 
