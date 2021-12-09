@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+
+<head>
+
+    <meta charset="UTF-8" />
+
+    <link rel="shortcut 'icon" href="#" />
+
+    <link href="dom-parte4_aula_16112021.css" rel="stylesheet" />
+
+    <title>JavaScript com HTML DOM - Parte 04</title>
+
+</head>
+
+<body>
+
+    <header>
+        <h1>Inscrições</h1>
+    </header>
+
+    <section class="container">
+
+        <form id="my-form">
+
+            <h1>Adicionar Usuário</h1>
+
+            <div class="msg"></div>
+
+            <div>
+                <label for="name">Nome:</label>
+                <input type="text" id="name" />
+            </div>
+
+            <div>
+                <label for="email">Data de nascimento:</label>
+                <input type="date" id="email" />
+            </div>
+
+            <div class="msg_email"></div>
+
+            <div>
+                <label for="horario">Cor:</label>
+                
+                <select name="hours" id="horario">
+                    <option value="Indefinido">Indefinido</option>
+                    <option value="Preta">Preta</option>
+                    <option value="Parda">Parda</option>
+                    <option value="Branca">Branca</option>
+                    <option value="Amarela">Amarela</option>
+                </select>
+
+            </div>
+
+            <input class="btn" type="submit" value="Enviar" />
+
+        </form>
+
+        <ul id="users"></ul>
+
+    </section>
+
+
+
+    <script src="./JS/dom-parte4_aula _16112021.js"></script>
+
+</body>
+
+</html>
