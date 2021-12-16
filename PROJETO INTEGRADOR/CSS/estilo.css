@@ -1,0 +1,543 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;200;400;900&display=swap');
+
+/*********************************Inicio Menu***************************/
+*{
+    padding: 0px;
+    margin: 0px;
+    font-family: 'Roboto Slab', serif;
+}
+
+.menu-principal {
+    width: 100%;
+    background-color: #049C9A;
+    height: 60px;
+    position: fixed;
+    z-index: 999;
+}
+
+.header-1 img{
+    width: 40px;
+}
+
+.header-1 input[type="checkbox"]{
+    display: none;
+}
+
+.header-1 input[type="checkbox"]:checked ~ .mainMenu
+{
+    transform: translateX(350px);
+}
+
+/****************************Fim do Header*********************************/
+
+/****************************Inicio do Menu*********************************/
+@media(max-width: 800px){
+  .mainMenu ul li{
+      width: 100%;
+      float: none;
+  }
+
+  .mainMenu ul ul{
+      position: static;
+      overflow: hidden;
+      max-height: 0;
+      transition: all .4s;
+  }
+
+  /* .mainMenu ul li:hover ul{
+      height: auto;
+      max-height: 200px; */
+  
+  
+}
+
+.mainMenu .logo-details img{
+    font-size: 30px;
+    color: #fff;
+    height: 70px 0;
+    min-width: 70px;
+}
+
+.mainMenu span{
+    color: white;
+    font-size: 28px;
+    margin-top: 0px;
+}
+
+.mainMenu a{
+    text-decoration: none;
+    color: white;
+}
+
+
+.mainMenu ul{
+    list-style: none;
+}
+
+.mainMenu ul ul{
+    position: absolute;
+    visibility: hidden;
+}
+
+.mainMenu ul li:hover ul{
+    visibility: visible;
+}
+
+.mainMenu ul ul li{
+    float: none;
+}
+
+.mainMenu ul ul li a{
+    background-color: #832A95;
+    margin-left: 100px; 
+    
+}
+
+.mainMenu{
+    background-color: #049C9A;
+    width: 350px;
+    height: 650px;
+    left: -350px;
+    position: absolute;
+    transition: all .5s;
+}
+
+.mainMenu ul{
+    top: 140px;
+    position: absolute;
+    width: 100%;
+}
+
+.mainMenu li:hover{
+    background-color: white;
+    border-radius: 30px;
+    margin-right: 30px ;
+    color: #049C9A;
+}
+
+.mainMenu a{
+    display: block;
+    padding: 15px 20px;
+    color: white;
+}
+
+.mainMenu a:hover, .submenu:hover{
+    color: #049C9A;
+}
+
+.mainMenu label{
+    padding: 15px;
+    position: absolute;
+    z-index: 1;
+    
+}
+
+.hamburgue{
+    font-size: 40px;
+    padding: 10px;
+    color: white;
+}
+
+#submenu li{
+    position: relative;
+    right: -20%;
+}
+
+#submenu li:hover{
+    background-color: transparent;
+    border-radius: 30px;
+    margin-right: 0px;
+    position: relative;
+    right: -20%;
+}
+
+.submenu li{
+    position: relative;
+    right: -20%;
+    margin-top: 30px;
+}
+
+.submenu li:hover{
+    background-color: transparent;
+    border-radius: 30px;
+    margin-right: 0px;
+    
+}
+/******************************************Fim do Menu**********************************************************/
+
+
+
+/**************************************Informações do site******************************************************/
+.infoIcons{
+    text-align: center;
+    justify-content: center;
+}
+
+.info1, .info3{
+    float: left;
+}
+
+.info1, .info2, .info3, .info4{
+    margin: 30px 80px 0 100px;
+
+}
+
+.icon-Info{
+    font-size: 60px;
+    padding: 10px;
+    color: #049C9A;
+}
+
+.txtInfo{
+    color: #049C9A;
+    font-size: 25px;
+    font-weight: 400;
+}
+
+.oQueFazemos{
+    text-align: center;
+    margin: 50px 200px 0 200px;
+}
+
+.oQueFazemos h1{
+    color: #0000FF;
+    font-size: 28px;
+    text-transform: uppercase;
+    font-weight: 550;
+
+}
+
+.oQueFazemos p{
+    font-size: 18px;
+    color: #000000;
+}
+
+.livrosQueTemos{
+    margin: 50px 200px 0 200px;
+}
+
+.livrosQueTemos h1{
+    text-align: center;
+    color: #049C9A;
+    font-size: 28px;
+    text-transform: uppercase;
+    font-weight: 550;
+    margin-bottom: 30px;
+}
+
+.livro1, .livro2, .livro3 {
+    border-bottom: 5px solid #f5f5f5;
+    padding: 35px;
+    margin-bottom: 30px;
+}
+
+.txtLivro p{
+    font-size: 18px;
+    color: #000;
+    margin-bottom: 50px;
+}
+
+.txtLivro button{
+    background-color: #049C9A;
+    padding: 7px 25px 7px 25px;
+    border: none;
+    border-radius: 60px ;
+    color: white;
+}
+
+.txtLivro button:hover{
+    background-color: #832A95;
+    transition: all 0.3s;
+}
+
+.imgLivro{
+    text-align: center;
+}
+
+.diversosLivros{
+    padding: 20px 200px 40px 200px;
+    background-color: #f5f5f5 ;
+    margin-top: -30px;
+}
+
+.diversosLivros h1{
+    text-align: center;
+    color: #049C9A;
+    font-size: 28px;
+    text-transform: uppercase;
+    font-weight: 550;
+    margin-bottom: 30px;
+}
+
+.diversosTxt p{
+    font-size: 18px;
+    color: #000;
+    margin-bottom: 50px;
+}
+
+.diversosTxt button{
+    background-color: #832A95;
+    padding: 7px 25px 7px 25px;
+    border: none;
+    border-radius: 60px ;
+    color: white;
+    
+}
+
+.diversosTxt button a{
+    text-decoration: none;
+    color: white;
+    
+}
+
+.diversosTxt button:hover{
+    background-color: #0000FF;
+    transition: all 0.3s;
+}
+
+.diversosImg{
+    text-align: center;
+}
+
+/******************************************Fim da infomações sobre o site*******************************************/
+
+/******************************************Inicio do corpo sobre nós******************************************************/
+
+.container div{
+    padding: 10px;
+}
+
+.sobreNos{
+    text-align: center;
+    color: #2b81bc;
+    font-size: 30px;
+    text-transform: uppercase;
+    font-weight: 550;
+    margin-bottom: 30px;
+}
+
+.item1 {
+    color: black;
+    width: 400px ;
+    height: 300px;
+    text-align: justify;  
+    /*border: 2px #f3f3f5 solid;*/
+}
+
+.item1 h3{
+    text-align: center;
+}
+
+.item2 {
+    color: white;
+    width: 400px ;
+    height: 300px;
+    text-align: justify;
+    background: #8871a7;
+}
+
+.item2 h3{
+    text-align: center;
+}
+
+
+.container{
+    display: flex;
+    flex-wrap: wrap-reverse;
+    justify-content: space-between;
+}
+
+h4 {
+    max-width: 100%;
+    display: block;
+
+}
+
+.flex{
+    display: flex;
+    flex-wrap: wrap;
+    /*max-width: 800px;
+    margin: 0 auto;*/
+}
+
+.flex > div{
+    flex: 1 1 200px;
+    margin: 20px;
+}
+
+.Missao{
+    color: white;
+    width: 50px ;
+    height: 200px;
+    text-align: justify;
+    background: #8871a7;
+}
+
+.Missao h4{
+    text-align: center;
+}
+
+.Visao{
+    color: black;
+    width: 50px ;
+    height: 200px;
+    text-align: justify;  
+}
+
+.Visao h4{
+    text-align: center;
+}
+
+.Valores{
+    color: white;
+    width: 50px ;
+    height: 200px;
+    text-align: justify;
+    background: #8871a7;
+}
+
+.Valores h4{
+    text-align: center;
+}
+/***********************************Inicio dos responsaveis**********************************************************/
+
+.integrantes{
+    text-align: center;
+    color: #2b81bc;
+    font-size: 30px;
+    text-transform: uppercase;
+    font-weight: 550;
+    margin-bottom: 30px;
+    
+}
+
+.integrantes img{
+    max-width: 100%;
+    display: block;
+}
+
+.resp1 p{
+    text-align: center;
+}
+.resp2 p{
+    text-align: center;
+}
+.resp3 p{
+    text-align: center;
+}
+
+.flex2{
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.flex2 {
+    background:#f3f3f5;
+}
+
+.flex2 > div{
+    flex: 1 1 200px;
+    margin: 10px;
+}
+
+/******************************************Fim dos Responsaveis******************************************************/
+/******************************************Fim do corpo sobre nós******************************************************/
+
+
+/*******************************************Inicio da Parte Contato/ Sugestões*************************************************/
+.formContato{
+    margin-top: 50px;
+    background-color: #049C9A;
+}
+
+.formContato h1{
+    text-align: center;
+    color: white;
+    font-size: 28px;
+    text-transform: uppercase;
+    font-weight: 550;
+    margin-bottom: 30px;
+    padding-top: 50px;
+}
+
+.formIcon label{
+    font-size: 18px;
+    color: white ;
+    margin-left: 100px;
+    
+}
+
+.formIcon input{
+    margin-left: 100px;
+    background-color: transparent;
+    border: none;
+    border-bottom: 2px solid #fff;
+    color: white;
+    border-radius: 5px;
+    height: 30px;
+    width: 90%;
+    outline: 0;
+    margin-bottom: 50px;
+    padding: 15px;
+}
+
+.formIcon textarea{
+    background-color: transparent;
+    border: 2px solid #fff;
+    color: white;
+    border-radius: 5px;
+    height: 150px;
+    width: 90%;
+    outline: 0;
+    margin: 15px 0 50px 100px;
+    padding: 15px;
+}
+
+.buttonEnviar{
+    text-align: center;
+}
+
+form .btnEnviar{
+    background-color: #fff;
+    color: #049C9A;
+    padding: 15px 25px;
+    font-size: 16px;
+    border: none;
+    margin-bottom: 20px;
+    border-radius: 10px;
+
+}
+
+/************************************************Fim Parte Conato/ Sugestões***************************************************/
+
+/************************************************Inicio Rodapé******************************************************/
+.rodape {
+    background-color: #049C9A;
+    color: #fff;
+    padding: 30px;
+}
+
+.txtRodape p{
+    font-size: 18px;
+}
+
+.logoRodape{
+    text-align: center;
+    margin-top: 30px;
+}
+
+.midiasSociais{
+    padding-left: 350px;
+    font-size: 25px;
+}
+
+.midiasSociais .midia{
+    background-color: white;
+    color: #049C9A;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 50px;
+}
+/*************************************************Fim do Rodapé*******************************************************/
