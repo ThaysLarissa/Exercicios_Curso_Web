@@ -79,18 +79,17 @@
     visibility: hidden;
 }
 
-.mainMenu ul li:hover ul{
+.mainMenu li:hover ul{ /* Responsavel por apresentar o restante do menu lateral */
     visibility: visible;
 }
 
-.mainMenu ul ul li{
+.mainMenu ul li{
     float: none;
 }
 
 .mainMenu ul ul li a{
     background-color: #832A95;
-    margin-left: 100px; 
-    
+    margin-left: 150px;  
 }
 
 .mainMenu{
@@ -109,10 +108,9 @@
 }
 
 .mainMenu li:hover{
-    background-color: white;
-    border-radius: 30px;
-    margin-right: 30px ;
-    color: #049C9A;
+    /* background-color: white; */
+    color: #629c04;
+    /* color: #049C9A; */
 }
 
 .mainMenu a{
@@ -122,7 +120,10 @@
 }
 
 .mainMenu a:hover, .submenu:hover{
+    /* color: #d7ff28; */
+    margin-right: auto ;
     color: #049C9A;
+    background-color: white;
 }
 
 .mainMenu label{
@@ -207,6 +208,10 @@
 
 }
 
+#ineditos{
+    color: #0000FF;
+}
+
 .oQueFazemos p{
     font-size: 18px;
     color: #000000;
@@ -216,9 +221,9 @@
     margin: 50px 200px 0 200px;
 }
 
-.livrosQueTemos h1{
+.container h1{
     text-align: center;
-    color: #049C9A;
+    color: #832A95;
     font-size: 28px;
     text-transform: uppercase;
     font-weight: 550;
@@ -254,6 +259,11 @@
     text-align: center;
 }
 
+.imgLivro img{
+    width: 200px;
+    height: 200px;
+}
+
 .diversosLivros{
     padding: 20px 200px 40px 200px;
     background-color: #f5f5f5 ;
@@ -284,7 +294,7 @@
     
 }
 
-.diversosTxt button a{
+.diversosTxt button a, .txtLivro a{
     text-decoration: none;
     color: white;
     
@@ -495,19 +505,33 @@ h4 {
     padding: 15px;
 }
 
-.buttonEnviar{
+.botao{
     text-align: center;
+    margin-top: -100px;
 }
 
-form .btnEnviar{
+form .botao{
     background-color: #fff;
     color: #049C9A;
     padding: 15px 25px;
     font-size: 16px;
     border: none;
-    margin-bottom: 20px;
+    /* margin-bottom: 20px; */
     border-radius: 10px;
+    width: 10%;
 
+}
+
+ul li span{
+    color: #e00;
+    padding: 3px 3px;
+    border: solid #000;
+}
+
+.error{
+    font-size: 0.8rem;
+    background: #fff;
+    color: red;
 }
 
 /************************************************Fim Parte Conato/ Sugestões***************************************************/

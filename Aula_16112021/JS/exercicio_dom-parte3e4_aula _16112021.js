@@ -8,10 +8,10 @@ btn.style.background = 'red';
 const myForm = document.querySelector('#my-form');
 const nameInput = document.querySelector('#name');
 
-const date = document.querySelector('#date');
+const email = document.querySelector('#email');
 const msg = document.querySelector('.msg');
 
-const cor = document.querySelector('#cor'); //campo Cor
+const mensagem = document.querySelector('#mensagem'); //campo Cor
 
 const userList = document.querySelector('#users');
 const dateMsg = document.querySelector('.msg_data');
@@ -22,26 +22,26 @@ myForm.addEventListener('submit', onSubmit);
 // Função onSubmit
 function onSubmit(e) {
     e.preventDefault();
-    let ano = new Date().getFullYear();
+    // let ano = new Date().getFullYear();
 
-    const temp = new Date(date.value).getFullYear();
+    // const temp = new Date(date.value).getFullYear();
 
     // let anoInput = parseInt(date.value.split('-')[0], 10) //Transformando string em decimal
-    if (nameInput.value === '' || date.value === '') {
+    if (nameInput.value === '' || email.value === ''|| mensagem.value === '') {
         // alert('Por favor, preencha os dados.');
         msg.classList.add('error');
-        msg.innerHTML = 'Por favor, preencha os dados.';
+        msg.innerHTML = 'Por favor, preencha todos os dados.';
         setTimeout(() => msg.remove(), 3000);
-    } else if (ano - temp < 18) {
-        dateMsg.classList.add('error');
-        dateMsg.innerHTML = 'Menor de idade';
-        setTimeout(() => dateMsg.remove(), 3000);
+    // } else if (ano - temp < 18) {
+    //     dateMsg.classList.add('error');
+    //     dateMsg.innerHTML = 'Menor de idade';
+    //     setTimeout(() => dateMsg.remove(), 3000);
     } else {
         // console.log('sucess');
         const li = document.createElement('li');
         li.appendChild(
             document.createTextNode(
-                `${nameInput.value} : ${date.value} : ${cor.value}`
+                `${nameInput.value}  (${email.value}) : ${mensagem.value}`
             )
         );
         userList.appendChild(li);
@@ -65,8 +65,8 @@ function onSubmit(e) {
         }
         // Limpa o formulário
         nameInput.value = '';
-        date.value = '';
-        date.getElementsByTagName('li')[0].selected = 'selected';
+        email.value = '';
+        email.getElementsByTagName('li')[0].selected = 'selected';
         nameInput.focus(); //Coloca o foco no elmento
     }
 }
