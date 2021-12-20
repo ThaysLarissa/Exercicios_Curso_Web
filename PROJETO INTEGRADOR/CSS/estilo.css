@@ -139,7 +139,7 @@
     color: white;
 }
 
-#submenu li{
+.submenuLivros li{
     position: relative;
     right: -20%;
     margin-right: auto ;
@@ -148,23 +148,23 @@
     padding-bottom: auto;
 }
 
-#submenu li:hover{
-    background-color: transparent;
+.submenuLivros li:hover{ /*O problema de sobreposição está aqui*/
+    background-color: white;
     border-radius: 30px;
     margin-right: 0px;
-    padding: 0;
+    padding: -100px;
     position: relative;
     right: -20%;
     
 }
 
-.submenu li{
+.submenuIneditos li{
     position: relative;
     right: -20%;
     margin-top: 30px;
 }
 
-.submenu li:hover{
+.submenuIneditos li:hover{
     background-color: transparent;
     border-radius: 30px;
     margin-right: 0px;
